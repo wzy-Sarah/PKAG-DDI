@@ -3,18 +3,32 @@ The code of the paper "PKAG-DDI: Pairwise Knowledge-Augmented Language Model for
 
 ## Installation environment
 python==3.10.12
+
 pytorch==2.1.0+cu121
+
 salesforce-lavis
+
 pytorch_lightning==1.9.0
+
 transformers == 4.41.2
+
 torch_geometric==2.6.1
+
 rdkit==2024.03.5
+
 pandas
+
 numpy
+
 peft
 
 all checkpoints are in xxx
-download the blip pre-trained model from xxx to all_checkpoints/bert_pretrained, download the galactica-1.3b from xxx to all_checkpoints/galactica-1.3b, download the pretrained model from xxx to all_checkpoints/stage2
+
+download the blip pre-trained model from xxx to all_checkpoints/bert_pretrained, 
+
+download the galactica-1.3b from xxx to all_checkpoints/galactica-1.3b, 
+
+download the pretrained model from xxx to all_checkpoints/stage2
 
 ## Stage One
 Training the PKS and selecting the potential biological function with their relevant scores.
