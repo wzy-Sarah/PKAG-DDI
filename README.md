@@ -42,12 +42,16 @@ python main_stage1_random.py --mode train --fold {0, 1, 2}
 ```
 
 ### Test the PKS
+```bash
 python main_stage1_random.py --mode test --fold {0, 1, 2}
+```
+
 
 ### Retrieval using PKS
 After training the model, we need to retrieve the training set, validation set, and testing set to get their top-k biological function for the preparation for the next stage.
-
-'python main_stage1_random.py --mode retrieval --fold {0, 1, 2}'
+```bash
+python main_stage1_random.py --mode retrieval --fold {0, 1, 2}
+```
 
 The output results will be put into ./data/retrieval/
 
@@ -62,11 +66,19 @@ python prepare_data.py --dataset {mecddi,ddinter} --split_mode {random,cold,scaf
 
 ### Train the Generator
 For mecddi:
+```bash
 python main_stage2.py --config configs/final/mecddi_random0_ksquare.json
+```
+
 
 For ddinter:
+```bash
 python main_stage2.py --config configs/final/ddinter_random0_ksquare.json
+```
+
 
 ### Test the Generator
-
+```bash
 python main_stage2.py --config config/final/final_ddinter_random0_kchengk.json --mode eval --work_dir work_dir/final_ddinter_random0_kchengk/epoch=*.ckpt
+```
+
