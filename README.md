@@ -43,7 +43,9 @@ python main_stage1_random.py --mode test --fold {0, 1, 2}
 
 ### Retrieval using PKS
 After training the model, we need to retrieve the training set, validation set, and testing set to get their top-k biological function for the preparation for the next stage.
-python main_stage1_random.py --mode retrieval --fold {0, 1, 2}
+
+'python main_stage1_random.py --mode retrieval --fold {0, 1, 2}'
+
 The output results will be put into ./data/retrieval/
 
 Similarly, you can run main_stage1_cold.py in the same way. The scaffold split does not need to set --fold
