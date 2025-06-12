@@ -61,8 +61,10 @@ Similarly, you can run main_stage1_cold.py in the same way. The scaffold split d
 ## Stage Two
 
 The datasets used in stage two are MecDDI and DDInter2.0 [DDInter2.0 official website](https://ddinter2.scbdd.com/). DDinter2.0 is a comprehensive, professional, and open-access DDI database. To enable comparison and analysis of biological functions, we utilized only the subset of DDIs from the DDInter2.0 dataset that are included in MecDDI and contain biological function information. The dataset we collect is at xxx.
-
+```bash
 python prepare_data.py --dataset {mecddi,ddinter} --split_mode {random,cold,scaffold} --fold {0,1,2} --mode {train,val, test}
+```
+
 
 ### Train the Generator
 For mecddi:
