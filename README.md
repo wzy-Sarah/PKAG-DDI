@@ -36,7 +36,10 @@ Training the PKS and selecting the potential biological function with their rele
 The dataset used in stage one is MecDDI [MecDDI official website](https://mecddi.idrblab.net/). It is a professional DDI dataset, which could offer the medical scientists clear clarification of DDI mechanisms. In our work, we used the DDI and the mechanism information in this dataset. The dataset we collect is at xxx.
 
 ### Train the PKS
+
+```bash
 python main_stage1_random.py --mode train --fold {0, 1, 2}
+```
 
 ### Test the PKS
 python main_stage1_random.py --mode test --fold {0, 1, 2}
