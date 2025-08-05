@@ -79,7 +79,9 @@ python main_stage2.py --config configs/final/ddinter_random0_ksquare.json
 ```bash
 python main_stage2.py --config config/final/final_ddinter_random0_kchengk.json --mode eval --work_dir work_dir/final_ddinter_random0_kchengk/epoch=*.ckpt
 ```
-### 2.5 Cite Us
+
+
+### Cite Us
 The paper can be found in [here](https://arxiv.org/pdf/2407.00891)
 ```bibtex
 @inproceedings{wang2025pkag,
