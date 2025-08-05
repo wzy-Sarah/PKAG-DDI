@@ -80,3 +80,11 @@ python main_stage2.py --config configs/final/ddinter_random0_ksquare.json
 python main_stage2.py --config config/final/final_ddinter_random0_kchengk.json --mode eval --work_dir work_dir/final_ddinter_random0_kchengk/epoch=*.ckpt
 ```
 
+```bibtex
+@inproceedings{wang2025pkag,
+  title={PKAG-DDI: Pairwise Knowledge-Augmented Language Model for Drug-Drug Interaction Event Text Generation},
+  author={Wang, Ziyan and Xiong, Zhankun and Huang, Feng and Zhang, Wen},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={10996--11010},
+  year={2025}
+}
