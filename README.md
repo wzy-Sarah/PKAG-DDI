@@ -24,7 +24,7 @@ numpy
 
 peft
 
-The **checkpoints** and **datasets** need to be downloaded from [here](https://huggingface.co/datasets/acai233/pkag-ddi/tree/main) . The source of these checkpoints are from MolTC [their checkpoints](https://huggingface.co/chang04/ddi/tree/main) .
+The **all_checkpoints** and **data** need to be downloaded from [here](https://huggingface.co/datasets/acai233/pkag-ddi/tree/main) . The source of these checkpoints are from MolTC [their checkpoints](https://huggingface.co/chang04/ddi/tree/main) .
 
 ## Stage One
 Training the PKS and selecting the potential biological function with their relevant scores.
