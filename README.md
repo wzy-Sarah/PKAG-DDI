@@ -1,6 +1,7 @@
 # PKAG-DDI
 The code of the paper "PKAG-DDI: Pairwise Knowledge-Augmented Language Model for Drug-Drug Interaction Event Text Generation"
-The paper can be found in [here](https://arxiv.org/pdf/2407.00891)
+
+The paper can be found in https://arxiv.org/pdf/2407.00891
 
 
 ## Installation environment
