@@ -27,6 +27,16 @@ numpy
 
 peft
 
+scikit-learn
+
+rouge_score
+
+ogb
+
+optuna
+
+deepchem
+
 The **all_checkpoints** and **data (including DDInter2.0 and MecDDI datasets that are used in the paper)** need to be downloaded from [here](https://huggingface.co/datasets/acai233/pkag-ddi/tree/main) . The source of these checkpoints are from MolTC [their checkpoints](https://huggingface.co/chang04/ddi/tree/main) .
 
 ## Stage One
