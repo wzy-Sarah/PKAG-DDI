@@ -25,7 +25,7 @@ pandas
 
 numpy
 
-peft
+peft==0.11.1
 
 scikit-learn
 
@@ -36,6 +36,8 @@ ogb
 optuna
 
 deepchem
+
+easydict
 
 The **all_checkpoints** and **data (including DDInter2.0 and MecDDI datasets that are used in the paper)** need to be downloaded from [here](https://huggingface.co/datasets/acai233/pkag-ddi/tree/main) . The source of these checkpoints are from MolTC [their checkpoints](https://huggingface.co/chang04/ddi/tree/main) .
 
@@ -76,6 +78,8 @@ python prepare_data.py --dataset {mecddi,ddinter} --split_mode {random,cold,scaf
 
 
 ### Train the Generator
+We train the generator using 2 A800. You can also adjust the project according to your own situation.
+
 For mecddi:
 ```bash
 python main_stage2.py --config configs/final/mecddi_random0_ksquare.json
