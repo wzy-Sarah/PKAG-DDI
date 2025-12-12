@@ -91,6 +91,12 @@ For ddinter:
 python main_stage2.py --config configs/final/ddinter_random0_ksquare.json
 ```
 
+The training time is often quite long. To avoid program interruption and start training from scratch, our method can start training from the breakpoint. For example:
+
+```bash
+python main_stage2.py --config configs/final/mecddi_random0_ksquare.json --mode breakpoint --breakpoint_file work_dirs/mecddi_random0_ksquare/epoch\=**.ckpt
+```
+
 
 ### Test the Generator
 ```bash
