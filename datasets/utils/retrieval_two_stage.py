@@ -336,12 +336,11 @@ class RetrievalTwoStage_kchengk(Dataset):
         return len(self)
 
     def __len__(self):
-        if 'train' in self.root:
-            return 20
-            #return int(count_subdirectories(self.root + "text/"))
+        if 'train' in self.root:     
+            return int(count_subdirectories(self.root + "text/"))
         else:
             return int(count_subdirectories(self.root + "text/"))
-            #
+            
 
     def __getitem__(self, index):
         drug1_name_list = os.listdir(self.root + 'drugname1/' + str(index) + '/') # text.txt
@@ -664,4 +663,5 @@ def escape_custom_split_sequence(text):
     str - the text with the split token added
     """
     return CUSTOM_SEQ_RE.sub(_insert_split_marker, text)
+
 
