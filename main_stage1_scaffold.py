@@ -73,6 +73,7 @@ class AlignDataset(Dataset):
         self.drug2fingerprint = drug2fingerprint
 
         if not os.path.exists("data/retrieval/uni_function_list.pkl"):
+            os.makedirs("data/retrieval")
             self.uni_functions = []
             for k, item in self.all_dict.items():
                 # des_id = item["mechanism_des_id"]
