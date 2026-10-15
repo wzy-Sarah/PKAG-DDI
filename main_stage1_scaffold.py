@@ -136,7 +136,7 @@ class AlignDataset(Dataset):
         drug2s = pd.read_csv("./data/MecDDI/drug_smiles.csv")
         self.drug2smiles = {a: b for a, b in zip(drug2s["drug_id"], drug2s["smiles"])}
 
-        for i in data_name_list[:200]:
+        for i in data_name_list:
             item = self.all_dict[i]
             drug1, drug2 = item["drug1_name"], item["drug2_name"]
             drug1_function, drug2_function = item["function1"], item["function2"]
